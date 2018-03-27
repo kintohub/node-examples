@@ -1,0 +1,1 @@
+ENTRYPOINT ["npm","run","prod"]
