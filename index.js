@@ -4,17 +4,15 @@ const PORT = process.env.PORT || '8000'
 
 
 /**
- * @api {get} /sample/{message} hello world sample request
- * @apiName GetSample
- * @apiParam (Url) {String} message the message to return
- * @apiSuccess (Success_200) {String} data the hello world data
- * @apiSuccess (Success_200) {String} output what the user entered in the url
+ * @api {get} /hello/{name} Prints "Hello {name}"
+ * @apiName HelloWorld
+ * @apiParam (Url) {String} name the name to print
+ * @apiSuccess (200) {String} message the hello {name} message
  */
-app.get('/sample/:message', (req, res) =>
+app.get('/hello/:name', (req, res) =>
   res.send({
-    data: 'Hello World',
-    output: req.params.message
+    message: `Hello ${req.params.name}`
   })
 )
 
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
+app.listen(PORT, () => console.log(`App listening on port ${PORT}!`))
