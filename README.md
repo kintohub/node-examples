@@ -1,6 +1,6 @@
 # Node sample
 
-A sample node microservice block for [kintohub](http://kintohub.com)
+A sample node microservice block for [kintohub](http://kintohub.com).
 
 
 # First time setup
