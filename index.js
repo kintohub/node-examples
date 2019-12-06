@@ -10,7 +10,7 @@ const PORT = process.env.PORT || '8000'
  */
 app.get('/hello/:name', (req, res) => {
   console.log('Log request: ', req.params.name)
-  return res.send({
+  return res.json({
     message: `Hello ${req.params.name}`
   })
 })
