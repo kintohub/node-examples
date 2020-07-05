@@ -1,18 +1,34 @@
-# Node sample
+# Node Sample App
 
-A sample node microservice block for [kintohub](http://kintohub.com).
+A sample node microservice block for [Kintohub](http://kintohub.com)
+
+## :rocket: Deploying on Kintohub v1
+
+### # Using Dockerfile 
+
+- **Type:** Web App
+- **Repo:** https://github.com/kintohub/node-example
+- **Branch:** master
+- **Language:** Dockerfile
+- **Dockerfile name:** Dockerfile
+- **Subfolder Path:** `.`
+- **Port:** 80
 
 
-# First time setup
+<hr>
 
-* run `npm install`
+### # Traditional way
 
+- **Type:** Web App
+- **Repo:** https://github.com/kintohub/node-example
+- **Branch:** master
+- **Language:** NodeJS
+- **Language version:** 14
+- **Build Command:** `npm install`
+- **Start Command:** `npm run prod`
+- **Subfolder Path:** `.`
+- **Port:** 80
 
-# Run
-
-* `npm start` run on port 8000
-* `npm run prod` run on port 80
-
-# Support
+## :ambulance: Support
 
 http://www.kintohub.com
